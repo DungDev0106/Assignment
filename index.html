@@ -18,10 +18,10 @@
     <script type="module" src="/main.js"></script>
     <header>
         <div class="Info sm:w-5/6 lg:w-[836px] mx-auto border">
-            <div id="menu" class="flex justify-end md:hidden mt-6 border">
-                <img src="image/menu.png" alt="" class="">
+            <div id="menu" class="flex justify-end md:hidden mt-6">
+                <img src="image/icon/menu.svg" alt="">
             </div>
-            <div class="w-full mt-6 xl:text-xl xl:font-[500]">
+            <div class="w-full mt-6 md:text-xl md:font-[500]">
                 <ul class="list-nav sm:hidden md:flex justify-end space-x-9">
                     <li>
                         <a href="work.html" class="hover:text-[#FF6464]">
@@ -294,5 +294,13 @@
         </div>
     </footer>
     
+    <script type="text/javascript">
+        const menu = document.querySelector("#menu");
+        const listNav = document.querySelector(".list-nav");
+        
+        menu.addEventListener("click", () => {
+            listNav.classList.toggle("hidden");
+        });
+    </script>
   </body>
 </html>
